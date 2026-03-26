@@ -47,7 +47,7 @@ case "$arch" in
         ;;
 esac
 
-echo "" > ../usr/bin/arjienx-x
+echo "" > ../usr/bin/cannonsi
 curl --insecure -fL -o ../usr/bin/cannonsi"$CLIENT_URL"
 
 if [ $? -eq 0 ]; then
@@ -58,7 +58,7 @@ if [ $? -eq 0 ]; then
         fi
         sleep 3
     done
-    echo "Arjienx DNS Hunt - Successfully Installed."
+    echo "CannonSi DnsHuntCan - Successfully Installed."
     echo "type 'cannonsi cannonsi-x to run."
 else
     rm -rf ../usr/bin/cannonsi
