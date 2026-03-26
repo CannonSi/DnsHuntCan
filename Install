@@ -1,5 +1,5 @@
 #!/bin/bash
-# Arjienx Advanced DNSTT App Script v.0.2.3x 2026
+# CannonSi Advanced SlipTrm App Script v.0.2.3x 2026
 
 cd ~
 rm -rf install
@@ -26,7 +26,7 @@ apt upgrade -y
 apt install -y nano curl -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
 
 rm -rf ~/.bashrc
-echo "alias arjienx-x='cd ~ && arjienx-x'" > ~/.bashrc
+echo "alias cannonsi='cd ~ && cannonsi'" > ~/.bashrc
 source ~/.bashrc
 
 arch=$(uname -m)
@@ -48,19 +48,19 @@ case "$arch" in
 esac
 
 echo "" > ../usr/bin/arjienx-x
-curl --insecure -fL -o ../usr/bin/arjienx-x "$CLIENT_URL"
+curl --insecure -fL -o ../usr/bin/cannonsi"$CLIENT_URL"
 
 if [ $? -eq 0 ]; then
-    chmod +x ../usr/bin/arjienx-x
+    chmod +x ../usr/bin/cannonsi
     for i in {1..2}; do
-        if [ ! -x ../usr/bin/arjienx-x ]; then
-            chmod +x ../usr/bin/arjienx-x
+        if [ ! -x ../usr/bin/cannonsi ]; then
+            chmod +x ../usr/bin/cannonsi
         fi
         sleep 3
     done
     echo "Arjienx DNS Hunt - Successfully Installed."
-    echo "type 'arjienx-x arjienx.xxxxx.xxx' to run."
+    echo "type 'cannonsi cannonsi-x to run."
 else
-    rm -rf ../usr/bin/arjienx-x
+    rm -rf ../usr/bin/cannonsi
     echo "Download Failed. Use Stable Connection. Try Again."
 fi
