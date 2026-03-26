@@ -1,3 +1,7 @@
+#DnsHuntCan
+
+
+
 #!/bin/bashw2a
 # Cannonx Advanced DNSx App Script v.0.2.2x 2026
 
